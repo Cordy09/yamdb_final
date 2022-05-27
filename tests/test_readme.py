@@ -19,5 +19,3 @@ class TestReadme:
         )
 
         assert re.search(re_str, readme), 'Проверьте, что добавили бейдж со статусом работы workflow в файл README.md'
-
-
