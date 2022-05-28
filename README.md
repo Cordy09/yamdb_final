@@ -50,37 +50,37 @@ python3 manage.py runserver
 
 *Запрос confirmstion_code:*
 
-* http://127.0.0.1:8000//api/v1/auth/signup/ - указанием username и email
+* http://84.252.142.107:81/api/v1/auth/signup/ - указанием username и email
 
 *Получение токена:*
 
-* http://127.0.0.1:8000/api/v1/auth/token/ - указанием username и confirmation_code, который был отправлен в письме на указанную почту
+* http://84.252.142.107:81/api/v1/auth/token/ - указанием username и confirmation_code, который был отправлен в письме на указанную почту
 
 *Персональная страница:*
 
-* http://127.0.0.1:8000/api/v1/users/me/ - получение информации о своем профиле(GET) и изменение личных данных(PATCH)
+* http://84.252.142.107:81/api/v1/users/me/ - получение информации о своем профиле(GET) и изменение личных данных(PATCH)
 
 *Произведения:*
 
-* http://127.0.0.1:8000/api/v1/titles/ - список всех произведений
-* http://127.0.0.1:8000/api/v1/titles//{id}/ - информация о конкретном
+* http://84.252.142.107:81/api/v1/titles/ - список всех произведений
+* http://84.252.142.107:81/api/v1/titles//{id}/ - информация о конкретном
 
 *Категории произведений:*
 
-* http://127.0.0.1:8000/api/v1/categories/ - все категории произведений (GET-запрос)
+* http://84.252.142.107:81/api/v1/categories/ - все категории произведений (GET-запрос)
 
 *Жанры:*
 
-* http://127.0.0.1:8000/api/v1/genres/ - все жанры произведений (GET-запрос)
+* http://84.252.142.107:81/api/v1/genres/ - все жанры произведений (GET-запрос)
 
 *Отзывы:*
 
-* http://127.0.0.1:8000/api/v1/titles/{title_id}/reviews/ - все отзывы к конкретному произведению(GET) и добавление отзыва(POST с указанием  text и score)
-* http://127.0.0.1:8000/api/v1/titles/{title_id}/reviews/{id}/ - получение определенного отзыва к конкретному произведению
+* http://84.252.142.107:81/api/v1/titles/{title_id}/reviews/ - все отзывы к конкретному произведению(GET) и добавление отзыва(POST с указанием  text и score)
+* http://84.252.142.107:81/api/v1/titles/{title_id}/reviews/{id}/ - получение определенного отзыва к конкретному произведению
 
 *Комментарии:*
 
-* http://127.0.0.1:8000/api/v1/titles/{title_id}/reviews/{review_id}/comments/ - все комментарии к Отзыву(GET) и добавление комментария(POST)
-* http://127.0.0.1:8000/api/v1/titles/{title_id}/reviews/{review_id}/comments/{comment_id}/ - получение определенного комментария к конкретному отзыву
+* http://84.252.142.107:81/api/v1/titles/{title_id}/reviews/{review_id}/comments/ - все комментарии к Отзыву(GET) и добавление комментария(POST)
+* http://84.252.142.107:81/api/v1/titles/{title_id}/reviews/{review_id}/comments/{comment_id}/ - получение определенного комментария к конкретному отзыву
 
 ![example workflow](https://github.com/Cordy09/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
