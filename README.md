@@ -83,4 +83,4 @@ python3 manage.py runserver
 * http://127.0.0.1:8000/api/v1/titles/{title_id}/reviews/{review_id}/comments/ - все комментарии к Отзыву(GET) и добавление комментария(POST)
 * http://127.0.0.1:8000/api/v1/titles/{title_id}/reviews/{review_id}/comments/{comment_id}/ - получение определенного комментария к конкретному отзыву
 
-![example workflow](https://github.com/Cordy09/yamdb_final/actions/workflows/yamdb_workflow.yaml/badge.svg)
+![example workflow](https://github.com/Cordy09/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
