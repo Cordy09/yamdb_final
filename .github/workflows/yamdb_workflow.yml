@@ -67,7 +67,6 @@ jobs:
       contains('
         refs/heads/main
         refs/heads/master
-        refs/heads/production
       ', github.ref)
     steps:
     - name: executing remote ssh commands to deploy
