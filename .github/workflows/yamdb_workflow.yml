@@ -77,8 +77,8 @@ jobs:
           echo PGADMIN_DEFAULT_EMAIL=${{ secrets.PGADMIN_DEFAULT_EMAIL }} >> .env
           echo PGADMIN_DEFAULT_PASSWORD=${{ secrets.PGADMIN_DEFAULT_PASSWORD }} >> .env
           docker-compose up -d --build 
-          docker-compose exec web python manage.py migrate
-          docker-compose exec web python manage.py collectstatic --no-input 
+          docker-compose exec -T web python manage.py migrate
+          docker-compose exec -T web python manage.py collectstatic --no-input 
 
   
   send_message:
