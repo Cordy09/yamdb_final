@@ -76,9 +76,9 @@ jobs:
           echo PGADMIN_DEFAULT_EMAIL=${{ secrets.PGADMIN_DEFAULT_EMAIL }} >> .env
           echo PGADMIN_DEFAULT_PASSWORD=${{ secrets.PGADMIN_DEFAULT_PASSWORD }} >> .env
           sudo docker-compose up -d 
-          sudo docker pull ${{ secrets.DOCKER_USERNAME }}/infra_actions
+          sudo docker pull ${{ secrets.DOCKER_USERNAME }}/infra
           sudo docker stop $(sudo docker ps -a -q)
-          sudo docker run --rm -d -p 5000:5000 ${{ secrets.DOCKER_USERNAME }}/infra_actions
+          sudo docker run --rm -d -p 5000:5000 ${{ secrets.DOCKER_USERNAME }}/infra
   
   send_message:
     runs-on: ubuntu-latest
