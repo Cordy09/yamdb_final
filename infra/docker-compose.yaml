@@ -5,8 +5,8 @@ services:
     image: dpage/pgadmin4
     restart: always
     environment:
-      PGADMIN_DEFAULT_EMAIL: os.getenv('PGADMIN_DEFAULT_EMAIL', default=None)
-      PGADMIN_DEFAULT_PASSWORD: os.getenv('PGADMIN_DEFAULT_PASSWORD', default=None)
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
     ports:
       - "5050:80"
   db:
