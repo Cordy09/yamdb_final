@@ -18,7 +18,7 @@ services:
     env_file:
       - ./.env
   web:
-      image: cordy09/infra:latest
+      image: cordy09/infra_api:v1
       restart: always
       volumes:
         - static_value:/app/static/
