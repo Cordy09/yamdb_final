@@ -43,7 +43,7 @@ jobs:
         uses: docker/build-push-action@v2 
         with:
           push: true
-          tags: cordy09/infra_api:latest
+          tags: cordy09/infra_api:v1
           file: ./api_yamdb/Dockerfile
 
   deploy:
