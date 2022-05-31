@@ -45,6 +45,7 @@ jobs:
           push: true
           tags: cordy09/infra_api:v1
           file: ./api_yamdb/Dockerfile
+          context: ./api_yamdb/
 
   deploy:
     runs-on: ubuntu-latest

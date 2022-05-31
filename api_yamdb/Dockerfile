@@ -2,7 +2,7 @@ FROM python:3.7-slim
 
 LABEL author='cordy' version=1 broken_brains=1
 
-WORKDIR /app/api_yamdb
+WORKDIR /app
 
 COPY ./requirements.txt ./
 
